@@ -1,5 +1,9 @@
 'use strict';
 
+$('.hamburger-icon').on('click', function () {
+  $('.hamburger-menu').toggle();
+});
+
 //global variable to house new projects
 var allProjects = []
 
