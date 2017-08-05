@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/style.css"/>
     <link rel="stylesheet" href="styles/reset.css"/>
 
-    <script type="text/x-handlebars-template">
+    <!-- <script type="text/x-handlebars-template">
       <article class="handlebar-template" data-project="project">
         <header>
           <h1>{{this.projectName}}</h1>
@@ -17,7 +17,7 @@
         <section class="project-bio">{{{projectBio}}}</section>
         <a href=""> /*linky linky fun stuff*/ </a>
       </article>
-    </script>
+    </script> -->
   </head>
   <body>
     <nav class="">
@@ -40,6 +40,17 @@
       </nav>
     <main>
       <section id="projects">
+        <article class="template" data-project="project">
+          <header>
+            <h1>projectName</h1>
+            <div>
+              Published: <time>datePublished</time>
+            </div>
+          </header>
+          <section class="project-bio">projectBio</section>
+          <section class="new-skills">newSkills</section>
+          <a href=""> /*linky linky fun stuff*/ </a>
+        </article>
       </section>
     </main>
     <footer>
@@ -47,6 +58,8 @@
     </footer>
     <!-- <script src="vendor/scripts/jquery-3.2.1.js"></script> -->
   <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
-  <script type="text/javascript" src="scripts/app.js"></script>
+  <script type="text/javascript" src="scripts/newSourceIdea.js"></script>
+  <script type="text/javascript" src="scripts/project.js"></script>
+  <script type="text/javascript" src="scripts/projectView.js"></script>
   </body>
 </html>
