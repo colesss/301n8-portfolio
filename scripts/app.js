@@ -7,8 +7,9 @@ var allProjects = []
 function Projects (newProjects) {
   this.projectName = newProjects.projectName;
   this.dateCreated = newProjects.dateCreated;
+  this.projectBio = newProjects.projectBio;
   this.newSkills = newProjects.newSkills;
-  this.fileLocation = newProjects.fileLocation;
+  this.projectUrl = newProjects.fileLocation;
   allProjects.push(this);
 }
 
