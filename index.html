@@ -5,55 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/base.css"/>
     <link rel="stylesheet" href="styles/reset.css"/>
-
-    <!-- <script type="text/x-handlebars-template">
-      <article class="handlebar-template" data-project="project">
-        <header>
-          <h1>{{this.projectName}}</h1>
-          <div class="byline">
-            Published: <time pubdate datetime="2000-01-01">{{dateCreated}}</time>
-          </div>
-        </header>
-        <section class="project-bio">{{{projectBio}}}</section>
-        <a href=""> /*linky linky fun stuff*/ </a>
-      </article>
-    </script> -->
   </head>
-  <body>
+
+  <body id="project">
     <nav class="menu-nav">
       <header class="">
         <h1>
           Cole Allen
         </h1>
-          <div class="hamburger-icon">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-          <ul class="hamburger-menu">
-            <li class="" ><a data-content="home" href="" class="menu"> Home</a></li>
-            <li class="" ><a data-content="projectContainer" href="" class="menu"> Projects</a></li>
-            <li class="" ><a data-content="about" href="" class="menu"> About Me</a></li>
-            <li class="" ><a data-content="contact" href="" class="menu"> Contact</a></li>
-          </ul>
-        </header>
-      </nav>
+        <div class="hamburger-icon">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <ul class="hamburger-menu">
+          <li class="" ><a data-content="home" href="" class="menu"> Home</a></li>
+          <li class="" ><a data-content="projectContainer" href="" class="menu"> Projects</a></li>
+          <li class="" ><a data-content="about" href="" class="menu"> About Me</a></li>
+          <li class="" ><a data-content="contact" href="" class="menu"> Contact</a></li>
+        </ul>
+      </header>
+    </nav>
+
     <main>
-      <section class="menu-content" id="projectContainer">
-        <article class="template" data-project="project" id="project">
-          <header>
-            <h1>projectName</h1>
-            <div>
-              Published: <time>datePublished</time>
-            </div>
-          </header>
-          <section class="project-bio">projectBio</section>
-          <section class="new-skills">newSkills</section>
-          <a href=""> /*linky linky fun stuff*/ </a>
-          <br>
-          <br>
-        </article>
-      </section>
+      <script id="entry-template" type="text/x-handlebars-template">
+        <div class="entry">
+          <div id="projectContainer" class="menu-content">
+            <header>
+              <h1>{{projectName}}</h1>
+              <div class="byline">
+                Published: <time pubdate datetime="2000-01-01">{{datePublished}}</time>
+              </div>
+            </header>
+            <section class="project-bio">{{{projectBio}}}</section>
+            <a href="{projectUrl}"}>{{projectUrl}}</a>
+          </div>
+        </div>
+      </script>
+
       <section id="about" class="menu-content">
           <header>
             Cole's Portfolio
@@ -71,13 +60,14 @@
         </article>
       </section>
     </main>
+    </body>
     <footer>
       &copy; 2017 Copyright | Cole's Portfolio | All the Projects!
     </footer>
-    <!-- <script src="vendor/scripts/jquery-3.2.1.js"></script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
   <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
   <script type="text/javascript" src="scripts/newProjects.js"></script>
   <script type="text/javascript" src="scripts/project.js"></script>
   <script type="text/javascript" src="scripts/projectView.js"></script>
-  </body>
 </html>
