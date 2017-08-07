@@ -13,16 +13,9 @@ function Projects (newProjects) {
   allProjects.push(this);
 }
 
-$('.hamburger-icon').on('click', function () {
-  $('.hamburger-menu').toggle();
-});
-
 Projects.prototype.toHtml = function() {
   var $newProjects = $('.template').clone();
   $newProjects.removeClass('template');
-
-  //TODO - data-project attributes to filter stuff!
-
   $newProjects.find('h1').text(this.projectName);
   $newProjects.find('time').text(this.datePublished);
   $newProjects.find('.project-bio').html(this.projectBio);
@@ -36,7 +29,7 @@ newProjects.forEach(function(projectObj) {
 });
 
 allProjects.forEach(function(project) {
-  $('#projects').append(project.toHtml());
+  $('#project').append(project.toHtml());
 });
 
 //Class 3 Portfolio (behind and need to use co-work time to catch up on this)
