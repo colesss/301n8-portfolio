@@ -1,1 +1,28 @@
+.site-header {
+  background-color: grey;
+}
 
+.menu-nav {
+  padding: 0.1em;
+  background-color: grey;
+}
+
+/*media query for tablet*/
+@media screen and (min-width: 700px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+}
+
+/*media query for laptop*/
+@media screen and (min-width: 1024px) {
+  /*do more stuff if screen width exceeds 1024pixels! TODO add different displays for larger than 1024 for nav!
+  body {
+  background: MORE different stuff;
+}
+  */
+}
