@@ -1,37 +1,4 @@
-/*media query for tablet*/
-@media screen and (min-width: 700px) {
-  /*do this stuff
-  body {
-  background: different stuff;
-}
-  */
-}
-
-/*media query for laptop*/
-@media screen and (min-width: 1024px) {
-  /*do more stuff if screen width exceeds 1024pixels! TODO add different displays for larger than 1024 for nav!
-  body {
-  background: MORE different stuff;
-}
-  */
-}
-
-.hamburger-icon {
-  display: inline-block;
-  float: right;
-}
-
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0px;
-}
-
-.hamburger-menu {
-  display: none;
-}
-
-ul{
-  margin-left: 30%;
+body {
+  background-color: black;
+  color: green;
 }
