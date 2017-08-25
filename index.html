@@ -4,15 +4,19 @@
     <title>Cole's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/base.css"/>
+    <link rel="stylesheet" href="styles/layout.css"/>
+    <link rel="stylesheet" href="styles/modules.css"/>
     <link rel="stylesheet" href="styles/reset.css"/>
   </head>
-
   <body id="project">
-    <nav class="menu-nav">
-      <header class="">
+    <header class="site-header">
+      <section>
         <h1>
           Cole Allen
         </h1>
+        <h2>A portfolio of projects...</h2>
+      </section>
+      <nav class="menu-nav">
         <div class="hamburger-icon">
           <div class="bar1"></div>
           <div class="bar2"></div>
@@ -24,9 +28,8 @@
           <li class="" ><a data-content="about" href="" class="menu"> About Me</a></li>
           <li class="" ><a data-content="contact" href="" class="menu"> Contact</a></li>
         </ul>
-      </header>
-    </nav>
-
+      </nav>
+    </header>
     <main>
       <script id="entry-template" type="text/x-handlebars-template">
         <div class="entry">
@@ -60,10 +63,10 @@
         </article>
       </section>
     </main>
-    </body>
-    <footer>
-      &copy; 2017 Copyright | Cole's Portfolio | All the Projects!
-    </footer>
+  </body>
+  <footer>
+    &copy; 2017 Copyright | Cole's Portfolio | All the Projects!
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
   <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
