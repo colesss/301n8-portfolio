@@ -1,7 +1,7 @@
 'use strict';
 
 //global variable to house new projects
-var allProjects = []
+var allProjects = [];
 
 //constructor to contain new projects
 function Projects (newProjects) {
@@ -26,3 +26,12 @@ newProjects.forEach(function(projectObj) {
 allProjects.forEach(function(project) {
   $('#project').append(project.toHtml());
 });
+
+$.ajax({
+  url: 'https://api.github.com/colesss/repos',
+  method: 'GET',
+  headers: {
+    'Authorization': 'token ${githubToken}'
+})
+
+// TODO: add a template for repo data.
