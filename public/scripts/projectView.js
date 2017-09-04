@@ -7,7 +7,8 @@ projectView.handleMainNav = function () {
     event.preventDefault();
     $('.menu-content').hide();
     var dataContent = $(this).attr('data-content');
-    $('#' + dataContent).fadeIn();
+    console.log('data-content = '+dataContent);
+    $('#' + dataContent).show();
   });
 };
 

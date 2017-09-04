@@ -2,6 +2,14 @@
   background-color: grey;
 }
 
+#title {
+  font-size: 4em;
+}
+
+#title-descriptor {
+  font-size: 2em;
+}
+
 .menu-nav {
   padding: 0.1em;
   background-color: grey;
@@ -25,4 +33,11 @@
   background: MORE different stuff;
 }
   */
+}
+
+footer {
+    position:fixed;bottom:0;
+
+    width:100%;
+    display:block;
 }
