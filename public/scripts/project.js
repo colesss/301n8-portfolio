@@ -10,28 +10,12 @@ function Projects (newProjects) {
   this.projectBio = newProjects.projectBio;
   this.newSkills = newProjects.newSkills;
   this.projectUrl = newProjects.fileLocation;
-  //allProjects.push(this);
 }
 
-Projects.prototype.toHtml = function() {
-  var source = $("#entry-template").html();
-  var template = Handlebars.compile(source);
-  return template(this);
-};
-
-newProjects.forEach(function(projectObj) {
-  allProjects.push (new Projects(projectObj));
-});
-
-allProjects.forEach(function(project) {
-  $('#project').append(project.toHtml());
-});
-
-$.ajax({
-  url: 'https://api.github.com/colesss/repos',
-  method: 'GET',
-  headers: {
-    'Authorization': 'token ${githubToken}'
-})
-
-// TODO: add a template for repo data.
+$.getJSON('data/projects.json')
+  .done(function(projectsArrayViaJSON) {
+    var template = Handlebars.compile($('#entry-template').html());
+    projectsArrayViaJSON.forEach(function(project) {
+      $('#projects').append(template(project));
+    })
+  })
