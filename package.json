@@ -1,0 +1,20 @@
+{
+  "name": "301n8-portfolio",
+  "version": "1.0.0",
+  "description": "Cole's Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colesss/301n8-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colesss/301n8-portfolio/issues"
+  },
+  "homepage": "https://github.com/colesss/301n8-portfolio#readme"
+}
