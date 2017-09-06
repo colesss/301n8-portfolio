@@ -7,11 +7,6 @@ const express = require('express');
 const app = express();
 app.use(express.static('./public'));
 
-app.post('/articles', bodyParser, function(request, response) {
-  console.log(request.body);
-  response.send('Record posted to server!!');
-});
-
-app.listen(PORT, function() {
-  console.log('Listening on port ' + PORT);
+app.listen(5000, () => {
+  console.log('server up');
 });
