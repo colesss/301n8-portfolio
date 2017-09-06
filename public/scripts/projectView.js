@@ -18,5 +18,4 @@ $(document).ready(function(){
   $('.hamburger-icon').on('click', function () {
     $('.hamburger-menu').toggle();
   });
-  // $('.hamburger-menu .menu:first').click();
 });
